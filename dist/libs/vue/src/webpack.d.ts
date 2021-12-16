@@ -1,0 +1,11 @@
+import { BuilderContext } from '@angular-devkit/architect';
+import { Path } from '@angular-devkit/core';
+import { BrowserBuilderSchema } from './builders/browser/schema';
+import { LibraryBuilderSchema } from './builders/library/schema';
+export declare function modifyIndexHtmlPath(config: any, options: BrowserBuilderSchema, context: BuilderContext): void;
+export declare function modifyEntryPoint(config: any, options: BrowserBuilderSchema, context: BuilderContext): void;
+export declare function modifyTsConfigPaths(config: any, options: BrowserBuilderSchema | LibraryBuilderSchema, context: BuilderContext): void;
+export declare function modifyCachePaths(config: any, context: BuilderContext): void;
+export declare function modifyTypescriptAliases(config: any, options: BrowserBuilderSchema | LibraryBuilderSchema, context: BuilderContext): void;
+export declare function modifyCopyAssets(config: any, options: LibraryBuilderSchema, context: BuilderContext, projectRoot: Path): void;
+export declare function modifyBabelLoader(config: any, babelConfig: string, context: BuilderContext): void;

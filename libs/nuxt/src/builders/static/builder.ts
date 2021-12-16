@@ -43,25 +43,8 @@ export function runBuilder(
     const projectRoot = await getProjectRoot(context);
 
     const config = await loadNuxtConfig({
-      rootDir: getSystemPath(projectRoot),
       configOverrides: {
         dev: false,
-        buildDir: getSystemPath(
-          join(
-            normalize(context.workspaceRoot),
-            browserOptions.buildDir,
-            '.nuxt'
-          )
-        ),
-        generate: {
-          dir: getSystemPath(
-            join(
-              normalize(context.workspaceRoot),
-              browserOptions.buildDir,
-              'dist'
-            )
-          ),
-        },
         build: {
           extend(config, ctx) {
             modifyTypescriptAliases(config, projectRoot);

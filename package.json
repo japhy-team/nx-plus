@@ -36,7 +36,9 @@
     "*.{ts,js,tsx,jsx,scss,less,css,html,json,md,mdx}": "prettier --write"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "nx-plus": "https://gitpkg.now.sh/japhy-team/nx-plus/libs/nuxt/src?master"
+  },
   "devDependencies": {
     "@angular-devkit/architect": "0.1201.0",
     "@angular-devkit/core": "12.1.0",
@@ -56,8 +58,8 @@
     "@types/semver": "^7.3.4",
     "@typescript-eslint/eslint-plugin": "4.19.0",
     "@typescript-eslint/parser": "4.19.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/cli-shared-utils": "~4.5.0",
+    "@vue/cli-service": "^4.5.15",
+    "@vue/cli-shared-utils": "^4.5.15",
     "dotenv": "8.2.0",
     "eslint": "7.22.0",
     "eslint-config-prettier": "8.1.0",
